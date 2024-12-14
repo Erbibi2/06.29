@@ -1,14 +1,14 @@
 // ==UserScript==
-// @name         SLY Assistant
+// @name         SLY Assistant 06.29
 // @namespace    http://tampermonkey.net/
 // @version      0.6.29
 // @description  try to take over the world!
 // @author       SLY w/ Contributions by niofox, SkyLove512, anthonyra, [AEP] Valkynen, Risingson, Swift42
 // @match        https://*.based.staratlas.com/
 // @require      https://unpkg.com/@solana/web3.js@1.95.8/lib/index.iife.min.js
-// @require      https://raw.githubusercontent.com/ImGroovin/SAGE-Lab-Assistant/main/anchor-browserified.js
-// @require      https://raw.githubusercontent.com/ImGroovin/SAGE-Lab-Assistant/main/buffer-browserified.js
-// @require      https://raw.githubusercontent.com/ImGroovin/SAGE-Lab-Assistant/main/bs58-browserified.js
+// @require      https://raw.githubusercontent.com/Erbibi2/06.29/main/anchor-browserified.js
+// @require      https://raw.githubusercontent.com/Erbibi2/06.29/main/buffer-browserified.js
+// @require      https://raw.githubusercontent.com/Erbibi2/06.29/main/bs58-browserified.js
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=staratlas.com
 // @grant        GM_setValue
 // @grant        GM_getValue
@@ -20,6 +20,8 @@
 
     //Used for reading solana data
     let customReadRPCs = [];
+    //'https://solana-mainnet.api.syndica.io/api-token/3Bgn2gJ6waU762hhm3hWnRGdZJ9VvziqYoBhLCab1rNKzq6AHcuya5r3ruAhV838SnqEeu5crCTu7d8U7FZsNuWLtNFNn4n9sWVB9UvJM1T3ZfB1Ad6j4HGhetosAcoiwfEYAhZv4zDkzi1JkUM7C78SfG179WSU9c8fft46UCYHEHe99qsZ9LRLF6nPJyPDjP5WJQM7BVy2ZzBZSECzWfYyRqL4xWXhfXfwDhwZmb5YDbhCU9eyDHsRnbfK9AgyPMFKRmcmP7wRevjS8n5upBefLzcDAD7EvuttLLtPa4k9yRcLgD4W1Zr9zKMGn9LPLPaKKEmvfXGosaBrp79kyYMgMcxwrBRP5tYqrAPAMGyYCfY6VtCHZwMMgJdRN1pHxKwUZMaAd2pKdowvE9DmcZBbiciqXcNmVfRN1xGDkSHWyUjEetwUf8ukfpnVcSoh22uzB493PPxyv8dWvbFxBgp1wBauR5rAuk28yWJvJCZLoz1bZULBGkTPpwPkC',
+    //'https://solana-mainnet.api.syndica.io/api-token/3Bgn2gJ6waU762hhm3hWnRGdZJ9VvziqYoBhLCab1rNKzq6AHcuya5r3ruAhV838SnqEeu5crCTu7d8U7FZsNuWLtNFNn4n9sWVB9UvJM1T3ZfB1Ad6j4HGhetosAcoiwfEYAhZv4zDkzi1JkUM7C78SfG179WSU9c8fft46UCYHEHe99qsZ9LRLF6nPJyPDjP5WJQM7BVy2ZzBZSECzWfYyRqL4xWXhfXfwDhwZmb5YDbhCU9eyDHsRnbfK9AgyPMFKRmcmP7wRevjS8n5upBefLzcDAD7EvuttLLtPa4k9yRcLgD4W1Zr9zKMGn9LPLPaKKEmvfXGosaBrp79kyYMgMcxwrBRP5tYqrAPAMGyYCfY6VtCHZwMMgJdRN1pHxKwUZMaAd2pKdowvE9DmcZBbiciqXcNmVfRN1xGDkSHWyUjEetwUf8ukfpnVcSoh22uzB493PPxyv8dWvbFxBgp1wBauR5rAuk28yWJvJCZLoz1bZULBGkTPpwPkC',
 
     //Used for pushing transactions to solana chain
     let customWriteRPCs = [];
